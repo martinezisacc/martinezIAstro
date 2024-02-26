@@ -1,78 +1,46 @@
 ---
-
+import "../styles/global.css";
+import PageHeader from "../components/PageHeader.astro"
+import PageFooter from "../components/PageFooter.astro"
+import Features from "../components/Features.astro"
+import PageContent from "../components/PageContent.astro"
+import Semesters from "../components/Semesters.astro"
 ---
 
+
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro - Isacc Martinez</title>
-	</head>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Theme Build For Astro</title>
+</head>
 
-	<body>
 
-		<!-- 
-			pageheader
-			showcase
-			features
-			pagecontent
-			pagefooter
-		 -->
-	
-		<!-- Begin Pageheader -->
-		<header id="pageheader">
-	
-			pageheader
-	
-		</header>
-		<!-- End Pageheader -->
-	
-	
-		<!-- Begin Showcase -->
-		<section id="showcase">
-	
-			showcase
-		
-		</section>
-		<!-- End Showcase -->
-	
-	
-		<!-- Begin Features -->
-		<section id="features">
-	
-			features
-	
-		</section>
-		<!-- End Features -->
-	
-	
-		<!-- Begin Pagecontent -->
-		<main id="pagecontent">
-	
-			pagecontent
-	
-		</main>
-		<!-- End Pagecontent -->
-	
-	
-		<!-- Begin Semesters -->
-		<section id="semesters">
-	
-			semesters
-	
-		</section>
-		<!-- End Semesters -->
-	
-		<!-- Begin Pagefooter -->
-		<footer id="pagefooter">
-	
-			pagefooter
-	
-		</footer>
-		<!-- End Pagefooter -->
-	
-	
-	</body>
+<>
+<!--
+pageheader
+showcase
+features
+pagecontent
+semesters
+pagefooter
+-->
+
+<PageHeader />
+
+<!-- Begin Showcase -->
+<section id="showcase">showcase</section>
+<!-- End Showcase -->
+
+<Features />
+
+<PageContent />
+
+<Semesters />
+
+<PageFooter />
+
+</body>
+
 </html>
