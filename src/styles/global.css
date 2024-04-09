@@ -1,5 +1,5 @@
 	:root {
-	--color-primary: #2d6858;
+	--color-primary: #32A1DC;
 	--color-secondary: #D5ECFB;
 	}
 	html {
@@ -98,7 +98,7 @@
 		background-size: cover;
 		background-position: bottom left;
 
-		border: 2px dashed red;
+		/* border: 2px dashed red; */
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -108,6 +108,8 @@
 	.logo img
 	{
 		height: 6rem;
+		border-radius: 50%;
+		min-height: 85px;
 	}
 	.logo:hover
 	{
@@ -125,17 +127,20 @@
 	/* Hedaer Menu */
 	#menu
 	{
-		background-color: #f0ad4a;
-		border: 2px dashed red;
+		background-color: var(--color-secondary);
+		/* border: 2px dashed red; */
 		display: flex;
 		justify-content: space-between;
 		width: 20rem; /* 200px */
 		list-style-type: none;
 		background-color: none;
+		padding: .5rem;
+		border-radius: 15px;
 	}
 	#menu li a
 	{
-		color: #fff;
+		color: white;
+		text-shadow: black 2px 2px 2px;
 	}
 	/* End of Header Section Styles */
 
@@ -151,7 +156,7 @@
 	background-color: var(--color-primary);
 	padding: 3rem;
 	background-image: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
-	background-image: url(/images/island.jpg);
+	background-image: url(/images/babymilo.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -160,7 +165,8 @@
 	#showcasetext
 	{
 		border: .2rem solid none;
-		color: #fff;
+		color: white;
+		text-shadow: black 2px 2px 2px;
 		text-align: center;
 		margin: 5rem auto;
 		max-width: 60rem;
@@ -188,7 +194,8 @@
 	}
 	#showcaseintro
 	{
-		color: #fff;
+		color: white;
+		text-shadow: black 2px 2px 2px;
 		text-align: center;
 		font-size: 3rem;
 	}
@@ -210,8 +217,8 @@
 	#features .container
 	{
 	    padding-top: 2rem;
-		background-color: burlywood;
-		border: 2px dashed red;
+		background-color: var(--color-secondary);
+		/* border: 2px dashed red; */
 		display: flex;
 		gap: 1rem;
 		justify-content: space-between;
@@ -221,7 +228,7 @@
 	{
 		background-color: #fff;
 		padding: 2rem;
-		box-shadow: 0rem 0rem 1rem silver;
+		box-shadow: 0rem 0rem 2rem #003477;
 		margin-bottom: 2rem;
 		border-radius: 2.5rem;
 	}
@@ -277,8 +284,8 @@
 	/* Semesters Thumbnail Section */
 	.thumbnail
 	{
-		background-color: burlywood;
-		border: 2px dashed red;
+		background-color: var(--color-secondary);
+		border: 2px solid #003477;
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
@@ -309,7 +316,7 @@
 	/* Footer Section */
 	#pagefooter 
 	{
-	background-color: var(--color-secondary);
+	background-color: var(--color-primary);
 	color: #fff;
 	text-align: center;
 	padding: 2rem;
@@ -317,15 +324,21 @@
 	}
 	#pagefooter .container
 	{
-		background-color: #003477;
-		border: 2px dashed red;
+		background-color: rgba(0, 0, 0, 0.5);
+		background-image: url(/images/cammo.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom left;
+
+		color: black;
+		/* border: 2px dashed red; */
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
 	}
 	#pagefooter a
 	{
-		color: #fff;
+		color: #333;
 	}
 	#pagefooter a:hover
 	{
@@ -338,10 +351,14 @@
 	#pagefooter #quote
 	{
 		text-align: left;
+		color: white;
+		text-shadow: black 2px 2px 2px;
 	}
 	#pagefooterlinks
 	{
 		display: none;
+		color: white;
+		text-shadow: black 2px 2px 2px;
 	}
 	/* End Footer Section Styles */
 
@@ -404,7 +421,7 @@
 	@media only screen and (min-width: 1200px) {
 	#features 
 	{
-	background-color: steelblue;
+	background-color: var(--color-secondary);
 	}
 	#pagefooterlinks
 	{
