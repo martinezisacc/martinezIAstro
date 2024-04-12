@@ -1,6 +1,6 @@
 	:root {
-	--color-primary: #32A1DC;
-	--color-secondary: #D5ECFB;
+	--color-primary: #336A26;
+	--color-secondary: #C8B384;
 	}
 	html {
 	font-size: 62.5%;
@@ -34,7 +34,7 @@
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.7;
 	background-color: none;
-	background-image: url(/images/cammo.jpg);
+	background-image: url(/images/camo.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom left;
@@ -74,7 +74,9 @@
 	/* General Mobile First CSS */
 	
 	.container {
-	background-color: white;
+	background-color: #fff;
+	border: 5px solid none;
+	border-radius: 25px;
 	min-height: 10rem;
 	
 	max-width: 120rem;
@@ -93,7 +95,7 @@
 	#pageheader .container
 	{
 		background-color: none;
-		background-image: url(/images/cammo.jpg);
+		background-image: url(/images/camo.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: bottom left;
@@ -127,7 +129,7 @@
 	/* Hedaer Menu */
 	#menu
 	{
-		background-color: var(--color-secondary);
+		background-color: #012313;
 		/* border: 2px dashed red; */
 		display: flex;
 		justify-content: space-between;
@@ -136,6 +138,7 @@
 		background-color: none;
 		padding: .5rem;
 		border-radius: 15px;
+		border: solid var(--color-secondary) 4px; 
 	}
 	#menu li a
 	{
@@ -217,7 +220,7 @@
 	#features .container
 	{
 	    padding-top: 2rem;
-		background-color: var(--color-secondary);
+		background-color: var(--color-primary);
 		/* border: 2px dashed red; */
 		display: flex;
 		gap: 1rem;
@@ -226,9 +229,9 @@
 	}
 	.card
 	{
-		background-color: #fff;
+		background-color: #f0f0f0;
 		padding: 2rem;
-		box-shadow: 0rem 0rem 2rem #003477;
+		box-shadow: 0rem 0rem 2rem #fff;
 		margin-bottom: 2rem;
 		border-radius: 2.5rem;
 	}
@@ -285,7 +288,7 @@
 	.thumbnail
 	{
 		background-color: var(--color-secondary);
-		border: 2px solid #003477;
+		border: 2px solid #012313;
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
@@ -325,7 +328,7 @@
 	#pagefooter .container
 	{
 		background-color: rgba(0, 0, 0, 0.5);
-		background-image: url(/images/cammo.jpg);
+		background-image: url(/images/camo.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: bottom left;
@@ -370,7 +373,7 @@
 	font-size: 1rem;
 	}
 	#features {
-	background-color: magenta;
+		background-color: var(--color-secondary);
 	}
 	}
 
@@ -379,14 +382,14 @@
 	font-size: 1.4rem;
 	}
 	#features {
-	background-color: yellow;
+		background-color: var(--color-secondary);
 	}
 	}
 
 	@media only screen and (min-width: 768px) {
 	#features 
 	{
-	background-color: lime;
+		background-color: var(--color-secondary);
 	}
 	.card
 	{
@@ -405,7 +408,7 @@
 	@media only screen and (min-width: 1024px) {
 	#features 
 	{
-	background-color: coral;
+	background-color: var(--color-secondary);
 	}
 	#logosbig
 	{
@@ -421,7 +424,7 @@
 	@media only screen and (min-width: 1200px) {
 	#features 
 	{
-	background-color: var(--color-secondary);
+	background-color: var(--color-primary);
 	}
 	#pagefooterlinks
 	{
